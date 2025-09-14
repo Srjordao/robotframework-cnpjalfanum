@@ -17,6 +17,17 @@ venv\Scripts\activate.bat  # Windows
 pip install .
 ```
 
+Para instalar a biblioteca via PyPI, execute:
+
+```bash
+pip install robotframework-cnpjalfanum
+
+
+### ✅ Requisitos
+
+- Python 3.8 ou superior
+- Robot Framework 6.0 ou superior
+
 ---
 
 ## 🤖 Integração com Robot Framework

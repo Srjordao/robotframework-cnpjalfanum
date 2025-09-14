@@ -16,7 +16,6 @@ dependencies = ["robotframework>=6.0"]
 keywords = ["robotframework", "cnpj", "alfanumérico", "validação", "qa"]
 classifiers = [
   "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: Apache Software License",
   "Framework :: Robot Framework",
   "Operating System :: OS Independent"
 ]

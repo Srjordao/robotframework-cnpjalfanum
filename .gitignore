@@ -1,0 +1,30 @@
+# Arquivos de distribuição
+dist/
+build/
+*.egg-info/
+MANIFEST
+
+# Relatórios do Robot Framework
+log.html
+output.xml
+report.html
+report/
+results/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Configurações locais e IDEs
+.vscode/
+.idea/
+
+# Arquivos temporários e de testes
+.pytest_cache/
+.coverage
+htmlcov/
