@@ -103,6 +103,7 @@ Gerar CNPJ Inválido
     Log    CNPJ inválido gerado: ${cnpj_invalido}
     Should Be False    ${valido}
 ```
+---
 
 🧪 Como executar os testes com Robot Framework (Windows)
 Para validar o funcionamento da biblioteca e garantir que os keywords estão operando corretamente, você pode rodar os testes automatizados usando o Robot Framework. Certifique-se de estar na raiz do projeto e que o Python reconheça o pacote da biblioteca. Para isso, é necessário configurar a variável de ambiente PYTHONPATH apontando para o diretório atual.
@@ -111,10 +112,6 @@ Para validar o funcionamento da biblioteca e garantir que os keywords estão ope
 $env:PYTHONPATH = "."
 robot .\examples\example_keywords.robot
 ```
-
----
-
-
 ---
 
 ## 🔍 Diferença entre `Completar DV` e `Reconstruir Cnpj`
