@@ -13,7 +13,17 @@ readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.8"
 dependencies = ["robotframework>=6.0"]
+keywords = ["robotframework", "cnpj", "alfanumérico", "validação", "qa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Framework :: Robot Framework",
+  "Operating System :: OS Independent"
+]
 
 [project.urls]
-Homepage = "https://github.com/seuuser/robotframework-cnpjalfanum"
-Documentation = "https://github.com/seuuser/robotframework-cnpjalfanum#readme"
+Homepage = "https://github.com/Srjordao/robotframework-cnpjalfanum"
+Documentation = "https://github.com/Srjordao/robotframework-cnpjalfanum"
+
+[tool.setuptools]
+packages = ["cnpjalfanum"]

@@ -1,4 +1,4 @@
-# 📦 cnpj_alfanum_lib
+# 📦 cnpjalfanum
 
 Biblioteca **Python** para geração, validação e formatação de **CNPJ alfanumérico**, conforme o novo padrão da Receita Federal do Brasil.  
 Ideal para uso em **testes automatizados** com **Robot Framework**.
@@ -25,7 +25,7 @@ No seu arquivo `.robot`:
 
 ```robot
 *** Settings ***
-Library    cnpj_alfanum_lib.CNPJAlfanumKeywords
+Library    cnpjalfanum.validator.CNPJAlfanumKeywords
 ```
 
 ---
@@ -104,6 +104,14 @@ Gerar CNPJ Inválido
     Should Be False    ${valido}
 ```
 
+🧪 Como executar os testes com Robot Framework (Windows)
+Para validar o funcionamento da biblioteca e garantir que os keywords estão operando corretamente, você pode rodar os testes automatizados usando o Robot Framework. Certifique-se de estar na raiz do projeto e que o Python reconheça o pacote da biblioteca. Para isso, é necessário configurar a variável de ambiente PYTHONPATH apontando para o diretório atual.
+
+```bash
+$env:PYTHONPATH = "."
+robot .\examples\example_keywords.robot
+```
+
 ---
 
 
@@ -139,11 +147,12 @@ Esta biblioteca já está **preparada para o novo padrão**.
 Execute os testes com:
 
 ```bash
-python cnpj_alfanum_lib.py
+python -m unittest tests.tests_units
+
 ```
 
 ---
 
 ## 📜 Licença
 
-**MIT** — Livre para uso, modificação e distribuição.
+**Apache 2.0** — Livre para uso, modificação e distribuição, com proteção de patentes e exigência de manter avisos de copyright e alterações.
