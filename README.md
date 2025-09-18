@@ -3,6 +3,8 @@
 Biblioteca **Python** para geração, validação e formatação de **CNPJ alfanumérico**, conforme o novo padrão da Receita Federal do Brasil.  
 Ideal para uso em **testes automatizados** com **Robot Framework**.
 
+Confira a biblioteca no [PyPI](https://pypi.org/project/robotframework-cnpjalfanum/).
+
 ---
 
 ## 🚀 Instalação
@@ -109,7 +111,7 @@ Gerar CNPJ Inválido
     ${cnpj_invalido}=    Gerar Cnpj Invalido
     ${valido}=    Validar Cnpj    ${cnpj_invalido}
     Log    CNPJ inválido gerado: ${cnpj_invalido}
-    Should Be False    ${valido}
+    Should Be Not True    ${valido}
 ```
 ---
 
