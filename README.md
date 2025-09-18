@@ -111,7 +111,7 @@ Gerar CNPJ Inválido
     ${cnpj_invalido}=    Gerar Cnpj Invalido
     ${valido}=    Validar Cnpj    ${cnpj_invalido}
     Log    CNPJ inválido gerado: ${cnpj_invalido}
-    Should Be Not True    ${valido}
+    Should Not Be True    ${valido}
 ```
 ---
 
